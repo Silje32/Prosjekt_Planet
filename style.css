@@ -18,3 +18,7 @@ main {
   min-width: 100svw;
   min-height: 100svh;
 }
+section {
+  min-width: 100svw;
+  min-height: 100svh;
+}
