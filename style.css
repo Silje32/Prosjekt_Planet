@@ -1,4 +1,4 @@
-/* header, main, section, footer */
+/* header, nav, ul, main, section, footer */
 
 /* Color Palette
 01. #E36822 - orange
@@ -18,6 +18,13 @@ header {
   height: 70px;
   position: sticky;
   top: 0;
+}
+nav {
+  width: 60svw;
+  height: 100%;
+}
+ul {
+  list-style-type: none;
 }
 
 main {
