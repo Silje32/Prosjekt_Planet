@@ -7,3 +7,9 @@
 04. #7F7967 - steal
 05. #A2F4E4 - action buttons and links
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
