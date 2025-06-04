@@ -1,38 +1,116 @@
 /* header, nav, ul, main, section, footer */
 
-/* Color Palette
-01. #E36822 - orange
-02. white?
-03. black?
-04. #7F7967 - steal
-05. #A2F4E4 - action buttons and links
-*/
-
 * {
-  margin: 0;
-  padding: 0;
+  /*margin: 0;
+  padding: 0;*/
   box-sizing: border-box;
+  /*border: 1px solid red;*/
 }
+
+@font-face {
+  font-family: "Nasalization";
+  src: url("Nasalization\ Rg.otf") format("truetype");
+}
+
+h1 {
+  font-family: "Nasalization", sans-serif;
+  color: #ffffff;
+  letter-spacing: 30px;
+  text-shadow: 0 0 5px #ff5e00, 0 0 10px #d14600, 0 0 20px #ffffff,
+    0 0 10px #ff4800;
+  text-align: center;
+}
+
+html,
+body {
+  background-image: url("planet-volumes-awYEQyYdHVE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  font-family: "Nasalization", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-  min-width: 100svw;
-  height: 70px;
-  position: sticky;
+  /*min-width: 100svw;*/
+  height: 170px;
+  width: auto;
+  /*position: sticky;*/
   top: 0;
+  font-size: x-large;
+  letter-spacing: 2px;
+  padding: 0px;
+
+  background-color: rgba(0, 0, 0, 0.253); /* Legg til dette */
+  z-index: 1000; /* Sørg for at den ligger over annet innhold */
 }
-nav {
-  width: 60svw;
-  height: 100%;
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
 }
-ul {
-  list-style-type: none;
+
+.navbar li a {
+  text-decoration: none;
+  color: rgb(255, 112, 3);
+  text-shadow: 0 0 2px #9c0000;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+  animation: pulse 1s infinite;
+  background-color: #ffffff;
+  border-color: rgb(255, 255, 255);
+  color: #e04700;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(251, 249, 249, 0.848);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(248, 247, 247, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(249, 249, 249, 0.867);
+  }
+}
+section {
+  max-width: 80%;
+  /*text-shadow: 0 0 5px #000000;*/
+  letter-spacing: 1px;
+  /*scroll-margin-top: 220px;*/
+  color: #d14600;
 }
 
 main {
-  background-color: #7f7967;
-  min-width: 100svw;
-  min-height: 100svh;
+  padding-top: 70px;
+  flex: 1;
 }
-section {
-  min-width: 100svw;
-  min-height: 100svh;
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: small;
 }
