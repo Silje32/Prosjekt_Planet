@@ -1,5 +1,3 @@
-/* header, nav, ul, main, section, footer */
-
 * {
   /*margin: 0;
   padding: 0;*/
@@ -39,7 +37,6 @@ body {
 }
 
 header {
-  /*min-width: 100svw;*/
   height: 170px;
   width: auto;
   /*position: sticky;*/
@@ -48,7 +45,7 @@ header {
   letter-spacing: 2px;
   padding: 0px;
 
-  background-color: rgba(0, 0, 0, 0.253); /* Legg til dette */
+  background-color: rgba(0, 0, 0, 0.253);
   z-index: 1000; /* Sørg for at den ligger over annet innhold */
 }
 
@@ -96,15 +93,18 @@ header {
 }
 section {
   max-width: 80%;
-  /*text-shadow: 0 0 5px #000000;*/
+
   letter-spacing: 1px;
-  /*scroll-margin-top: 220px;*/
   color: #d14600;
 }
 
 main {
   padding-top: 70px;
   flex: 1;
+}
+
+#home {
+  max-width: 40%;
 }
 
 footer {
