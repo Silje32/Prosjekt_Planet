@@ -102,15 +102,9 @@ section {
   max-width: 80%;
   margin: 30px 0px;
   letter-spacing: 1px;
-  color: #d14600;
+  color: #f8f6f5;
 }
 
-#home {
-  color: white;
-  letter-spacing: 3px;
-  line-height: 1.4;
-  font-size: larger;
-}
 main {
   padding-top: 70px;
   flex: 1;
@@ -118,12 +112,25 @@ main {
 
 #home {
   max-width: 40%;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1.4;
+  font-size: larger;
+}
+
+#info {
+  letter-spacing: 1px;
+}
+
+#måner {
+  letter-spacing: 1px;
 }
 
 footer {
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 1rem;
-  color: white;
+  color: rgb(244, 70, 7);
   font-size: small;
+  letter-spacing: 12px;
 }
