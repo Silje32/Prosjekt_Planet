@@ -17,12 +17,11 @@
 h1 {
   font-family: "Nasalization", sans-serif;
   color: #ffffff;
-  letter-spacing: 30px;
+  letter-spacing: 50px;
   text-shadow: 0 0 5px #ff5e00, 0 0 10px #d14600, 0 0 20px #ffffff,
     0 0 10px #ff4800;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: auto;
+  justify-content: flex-start;
+  margin: 20px 100px;
 }
 
 html,
@@ -33,10 +32,11 @@ body {
 }
 
 .hero {
-  background-image: url("planet-volumes-awYEQyYdHVE-unsplash.jpg");
+  background-image: url("images/planet-volumes-awYEQyYdHVE-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 10px 0px 10px 20px;
 }
 
 .wrapper {
@@ -52,14 +52,14 @@ header {
   font-size: x-large;
   letter-spacing: 2px;
   margin-bottom: 0px;
-  background-color: rgba(0, 0, 0, 0.253);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 1000; /* Sørg for at den ligger over annet innhold */
 }
 
 .navbar {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 3rem;
   padding: 0;
   margin: 0;
@@ -105,6 +105,12 @@ section {
   color: #d14600;
 }
 
+#home {
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1.4;
+  font-size: larger;
+}
 main {
   padding-top: 70px;
   flex: 1;
