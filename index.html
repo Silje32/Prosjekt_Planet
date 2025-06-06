@@ -102,6 +102,48 @@
             alt="Jupiters Måner"
           />
         </section>
+        <section id="måneliste">
+          <h2>Jupiters Galileiske Måner</h2>
+          <ul>
+            <li onclick="visInfo('io')">Io</li>
+            <div id="info-io" class="måninfo"></div>
+
+            <li onclick="visInfo('europa')">Europa</li>
+            <div id="info-europa" class="måninfo"></div>
+
+            <li onclick="visInfo('ganymedes')">Ganymedes</li>
+            <div id="info-ganymedes" class="måninfo"></div>
+
+            <li onclick="visInfo('callisto')">Callisto</li>
+            <div id="info-callisto" class="måninfo"></div>
+          </ul>
+        </section>
+
+        <script>
+          const måneData = {
+            io: "Io er den mest vulkansk aktive månen i solsystemet, med over 400 aktive vulkaner.",
+            europa:
+              "Europa har en isete overflate og antas å ha et hav under isen som kan inneholde liv.",
+            ganymedes:
+              "Ganymedes er den største månen i solsystemet – større enn planeten Merkur.",
+            callisto:
+              "Callisto er en gammel og kraterdekket måne, med en av de eldste overflatene i solsystemet.",
+          };
+          function visInfo(måne) {
+            const element = document.getElementById(`info-${måne}`);
+            const erSynlig = element.innerHTML !== "";
+
+            // Skjul alle først
+            document
+              .querySelectorAll(".måninfo")
+              .forEach((div) => (div.innerHTML = ""));
+
+            // Vis kun hvis den ikke allerede var synlig
+            if (!erSynlig) {
+              element.innerHTML = `<p>${måneData[måne]}</p>`;
+            }
+          }
+        </script>
         <section id="bilder">
           <h2>Bilder av Jupiter</h2>
           <p>
