@@ -22,8 +22,8 @@ h1 {
   text-shadow: 0 0 5px #ff5e00, 0 0 10px #d14600, 0 0 20px #ffffff,
     0 0 10px #ff4800;
   justify-content: flex-start;
-  margin: 20px 190px;
-  font-size: 50px;
+  margin: 30px 70px;
+  font-size: 55px;
 }
 
 h2 {
@@ -42,8 +42,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 10px 0px 10px 20px;
-  margin-left: 170px;
+  margin: 00px 0px 10px 20px;
+  margin-left: 150px;
 }
 
 .wrapper {
@@ -71,8 +71,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5rem;
-  padding-top: 50px;
+  gap: 7rem;
+  padding-top: 150px;
   margin: 0;
 }
 
@@ -81,8 +81,8 @@ header {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 5px #ff5e00, 0 0 10px #d14600, 0 0 20px #ffffff,
     0 0 10px #ff4800;
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1.3rem;
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
   border-radius: 25px;
@@ -119,6 +119,7 @@ section {
 
 main {
   padding-top: 30px;
+  padding-left: 20px;
   margin-left: 150px;
   width: 70%;
   flex: 1;
@@ -131,8 +132,8 @@ main {
   letter-spacing: 3px;
   line-height: 1.4;
   font-size: larger;
-  padding-top: 100px;
-  padding-left: 0;
+  padding-top: 50px;
+  padding-left: 10px;
 }
 
 #info {
