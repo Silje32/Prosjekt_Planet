@@ -28,6 +28,7 @@ h1 {
 
 h2 {
   color: #df5611;
+  padding-top: 70px;
 }
 
 html,
@@ -110,20 +111,27 @@ header {
     box-shadow: 0 0 5px rgba(249, 249, 249, 0.867);
   }
 }
-section {
-  max-width: 80%;
-  margin: 20px 10px;
+
+#article1 {
+  display: flex;
+  gap: 10px;
+}
+
+/*section {
+  max-width: 100%;
+
   letter-spacing: 1px;
   color: #f8f6f5;
-}
+}*/
 
 main {
   padding-top: 30px;
   padding-left: 20px;
   margin-left: 150px;
-  width: 70%;
+  width: 80%;
   flex: 1;
   font-size: larger;
+  color: #ffffff;
 }
 
 #home {
@@ -136,12 +144,18 @@ main {
   padding-left: 10px;
 }
 
-#info {
+.info {
   letter-spacing: 1px;
+  width: 70%;
 }
 
-#måner {
+.måner {
   letter-spacing: 1px;
+  width: 40%;
+}
+
+#bilde1 {
+  width: 400px;
 }
 
 #måneliste ul {
