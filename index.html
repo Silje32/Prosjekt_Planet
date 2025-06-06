@@ -13,10 +13,10 @@
         <header>
           <nav>
             <ul class="navbar">
-              <li><a href="#home">Hjem</a></li>
-              <li><a href="#info">Jupiter</a></li>
-              <li><a href="#måner">Måner</a></li>
-              <li><a href="#bilder">Bilder</a></li>
+              <li><a href="#home">JUPITER</a></li>
+              <li><a href="#måneliste">MÅNER</a></li>
+              <li><a href="#måner">REDSPOT</a></li>
+              <li><a href="#images">BILDER</a></li>
             </ul>
           </nav>
         </header>
@@ -111,31 +111,31 @@
         </section>
 
         <section id="måneliste">
-          <h2>Jupiters Galileiske Måner</h2>
+          <h2 class="h2">JUPITERS GALILEiSKE MÅNER</h2>
           <ul>
-            <li onclick="visInfo('io')">Io</li>
+            <li onclick="visInfo('io')">IO</li>
             <div id="info-io" class="måninfo"></div>
 
-            <li onclick="visInfo('europa')">Europa</li>
+            <li onclick="visInfo('europa')">EUROPA</li>
             <div id="info-europa" class="måninfo"></div>
 
-            <li onclick="visInfo('ganymedes')">Ganymedes</li>
+            <li onclick="visInfo('ganymedes')">GANYMEDES</li>
             <div id="info-ganymedes" class="måninfo"></div>
 
-            <li onclick="visInfo('callisto')">Callisto</li>
+            <li onclick="visInfo('callisto')">CALLISTO</li>
             <div id="info-callisto" class="måninfo"></div>
           </ul>
         </section>
 
         <script>
           const måneData = {
-            io: "Io er den mest vulkansk aktive månen i solsystemet, med over 400 aktive vulkaner.",
+            io: "Io er den innerste av Jupiters fire galileiske måner og er kjent som det mest vulkansk aktive himmellegemet i solsystemet. Den har hundrevis av vulkaner, hvorav mange stadig er i utbrudd. Den sterke vulkanske aktiviteten skyldes tidevannskrefter fra Jupiter og de andre månene, som konstant drar og presser på Io, og skaper intens friksjon og varme i månens indre. Overflaten er dekket av svovel i forskjellige farger og flytende lavafelt, noe som gir Io et unikt og fargerikt utseende. Månens ekstreme geologi gjør den til et fascinerende mål for forskning.",
             europa:
-              "Europa har en isete overflate og antas å ha et hav under isen som kan inneholde liv.",
+              "Europa er en av Jupiters galileiske måner og er dekket av et tykt lag is. Under isen antas det å finnes et globalt hav av flytende vann, som kan være flere ganger dypere enn havene på jorden. Dette gjør Europa til et av de mest lovende stedene i solsystemet for mulig utenomjordisk liv. Overflaten har få kratere og preges av sprekker og mønstre som tyder på geologisk aktivitet og bevegelse i islaget.",
             ganymedes:
-              "Ganymedes er den største månen i solsystemet – større enn planeten Merkur.",
+              "Ganymedes er ikke bare Jupiters største måne, men også den største månen i hele solsystemet – faktisk større enn planeten Merkur. Den har en kjerne av metall, et steinete indre og et isete ytre lag. Forskere tror også at Ganymedes kan ha et saltvannshav dypt under overflaten. I tillegg er Ganymedes den eneste månen som har sitt eget magnetfelt.",
             callisto:
-              "Callisto er en gammel og kraterdekket måne, med en av de eldste overflatene i solsystemet.",
+              "Callisto er den ytterste av de galileiske månene og har en svært gammel overflate dekket av utallige nedslagskratere. Den er en av de mest kraterfylte himmellegemene i solsystemet, og overflaten har ikke endret seg mye på milliarder av år. Callisto har en isete skorpe, og det kan også finnes et lag av flytende vann dypt under overflaten.",
           };
           function visInfo(måne) {
             const element = document.getElementById(`info-${måne}`);
@@ -152,15 +152,9 @@
             }
           }
         </script>
-        <section id="bilder">
-          <h2>Bilder av Jupiter</h2>
-          <p>
-            <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
-            sapiente itaque autem, impedit at explicabo quidem enim quaerat
-            voluptatum ipsum adipisci minus architecto rerum? Maiores
-            consequuntur molestias saepe magnam illo.
-          </p>
+        <section id="images">
+          <h2>Bilder</h2>
+          <img src="images/callisto.jpg" alt="callisto" />
         </section>
       </main>
       <footer>
