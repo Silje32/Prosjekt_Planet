@@ -15,7 +15,7 @@
 }
 
 h1 {
-  font-family: "Nasalization", sans-serif;
+  font-family: "Nasalization", "Arial", sans-serif;
   color: #ffffff;
   background-color: #0c0c0c00;
   letter-spacing: 50px;
@@ -29,6 +29,7 @@ h1 {
 h2 {
   color: #df5611;
   padding-top: 70px;
+  font-family: "Nasalization", "Arial", sans-serif;
 }
 
 .h2 {
@@ -43,7 +44,7 @@ html,
 body {
   min-height: 100vh;
   color: rgb(0, 0, 0);
-  font-family: "Nasalization", sans-serif;
+  font-family: "Georgia", serif;
 }
 
 .hero {
