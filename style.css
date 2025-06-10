@@ -1,9 +1,18 @@
+/* Color Palette:
+H1 - white;
+H2 - #df5611;
+nav - rgb (255, 255, 255);
+nav hover - #e04700;  
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /*border: 1px solid red;*/
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap");
 
 @font-face {
   font-family: "Nasalization";
