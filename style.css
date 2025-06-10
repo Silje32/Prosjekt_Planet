@@ -180,15 +180,36 @@ main {
   font-size: 20px;
 }
 
-#images {
+#bilder {
+  text-align: center;
 }
 
-img {
-  width: 200px;
+#images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  justify-items: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+#images img {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  padding: 10px;
 }
 
 #redspot {
   justify-content: center;
+  text-align: center;
+}
+
+#redspotimg {
+  width: 400px;
+  justify-content: center;
+  padding: 50px;
 }
 
 footer {
